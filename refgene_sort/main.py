@@ -5,7 +5,7 @@ import argparse
 import os
 
 
-CREATE_REFGENE_TABLE_SCRIPT=open('create_refgene_table.sql', 'r').read()
+CREATE_REFGENE_TABLE_SCRIPT=open(os.path.join(os.path.dirname(os.path.abspath(__file__)),'create_refgene_table.sql'), 'r').read()
 
 
 def arg_parser():
