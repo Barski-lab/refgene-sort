@@ -10,7 +10,7 @@ CREATE_REFGENE_TABLE_SCRIPT=open(os.path.join(os.path.dirname(os.path.abspath(__
 
 def arg_parser():
     """Returns argument parser"""
-    parser = argparse.ArgumentParser(description='refGene annotation sorter parser')
+    parser = argparse.ArgumentParser(description='refGene annotation sorter')
     parser.add_argument ("-t", "--tmp", help="Temp folder to store sqlite db file", default=None)
     parser.add_argument ("-q", "--querry", help="Custom select querry. Table name should be refGene", default="SELECT * FROM refGene")
     parser.add_argument("-s", "--order", help="Ordering option", default='')
